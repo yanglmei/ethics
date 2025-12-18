@@ -20,12 +20,7 @@ texts = df_50["input"].tolist()
 print(texts[0])
 
 from agent.third_perspective_agent import MoralAgent
-# agent = MoralAgent(
-#     name="MoralAgent",
-#     model="pro-deepseek-r1",  # 或你自己的 "pro-deepseek-v3"
-#     api_key="sk-brvjbprrs2ihfjv5",
-#     api_base="https://cloud.infini-ai.com/maas/v1"   # 或者你自己的base
-# )
+
 agent = MoralAgent(
     name="MoralAgent",
     model="gpt-4o",  # 或你自己的 "pro-deepseek-v3"
