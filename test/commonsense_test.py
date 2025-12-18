@@ -21,8 +21,8 @@ from agent.perspective_rewrite_agent import PerspectiveRewriteAgent
 agent = PerspectiveRewriteAgent(
     name="PerspectiveRewriteAgent",
     model="pro-deepseek-r1",  # 或你自己的 "pro-deepseek-v3"
-    api_key="sk-brvjbprrs2ihfjv5",
-    api_base="https://cloud.infini-ai.com/maas/v1"   # 或者你自己的base
+    api_key="",
+    api_base=""   # 或者你自己的base
 )
 
 # 调用 agent 处理文本
