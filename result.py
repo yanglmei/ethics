@@ -8,7 +8,7 @@ import pandas as pd
 first_scores_path = r"G:\我的研\情感计算\道德\ethics\results\commonsense\train_first_perspective_50_scores.jsonl"
 third_scores_path = r"G:\我的研\情感计算\道德\ethics\results\commonsense\train_third_perspective_50_scores.jsonl"
 csv_path = r"G:\我的研\情感计算\道德\ethics\dataset\filter\commonsense\train_filter_50_third_person.csv"
-output_jsonl_path = r"G:\我的研\情感计算\道德\ethics\results\commonsense\result_50_chatgpt.jsonl"
+output_jsonl_path = r"G:\我的研\情感计算\道德\ethics\results\commonsense\result_50_gemini-pro.jsonl"
 
 # =========================
 # 1. 读取 jsonl 文件

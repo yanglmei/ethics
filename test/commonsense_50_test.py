@@ -23,9 +23,9 @@ from agent.third_perspective_agent import MoralAgent
 
 agent = MoralAgent(
     name="MoralAgent",
-    model="gpt-4o",  # 或你自己的 "pro-deepseek-v3"
-    api_key="",
-    api_base=""   # 或者你自己的base
+    model="gemini-pro",  # 或你自己的 "pro-deepseek-v3"
+    api_key="sk-AkWKr0v706oQniwQC8Bf507f6c154556B8F836F8764e2360",
+    api_base="https://api.mixrai.com/v1/"   # 或者你自己的base
 )
 
 results = agent.process_texts(
