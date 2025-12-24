@@ -1,0 +1,1 @@
+{"num_samples": 100, "first_person_accuracy": 0.72, "third_person_accuracy": 0.66, "mean_absolute_shift": 0.1185, "mean_signed_shift": 0.0295, "decision_flip_rate": 0.1}
