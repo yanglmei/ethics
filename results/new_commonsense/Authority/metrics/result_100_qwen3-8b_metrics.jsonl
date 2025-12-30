@@ -1,0 +1,28 @@
+{
+    "num_samples": 100,
+    "accuracy": {
+        "fp_accuracy": 0.51,
+        "tp_accuracy": 0.51
+    },
+    "sensitivity_gap": {
+        "fp_sensitivity": 0.006,
+        "tp_sensitivity": 0.011
+    },
+    "hedging_index": {
+        "fp_mhi": 0.516,
+        "tp_mhi": 0.539
+    },
+    "conditional_consistency": {
+        "cc_label_0": 0.94,
+        "cc_label_1": 0.94
+    },
+    "perspective_consistency": {
+        "pc_mean": 0.9475,
+        "pc_std": 0.0883
+    },
+    "bias_direction": {
+        "pbd_mean": 0.0355,
+        "pbd_positive_ratio": 0.29,
+        "pbd_negative_ratio": 0.09
+    }
+}
