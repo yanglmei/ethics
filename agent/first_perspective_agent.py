@@ -58,8 +58,14 @@ class MoralAgent(BaseAgent):
                         {"role": "user", "content": prompt}
                     ],
                     temperature=0,
-                    timeout=500
+                    timeout=60
                 )
+                print(response)
+
+                msg = response.choices[0].message
+
+                if msg.content is None:
+                    raise ValueError("Model returned empty content")
 
                 score = response.choices[0].message.content.strip()
                 print("rewritten:",score)
@@ -70,11 +76,12 @@ class MoralAgent(BaseAgent):
                 })
 
             except Exception as e:
-                print("⚠️ 请求失败，保留原文本")
+                print("⚠️ 请求失败，错误信息如下：")
+                print(repr(e))          # 👈 这是最重要的
                 results.append({
                     "index": idx,
-                    "score": text,
-                    "error": str(e)
+                    "score": None,
+                    "error": repr(e)
                 })
 
             # 🔒 防止并发 / 限流（非常重要）
