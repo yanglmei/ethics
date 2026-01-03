@@ -50,7 +50,7 @@
 {"index": 49, "first_perspective_score": 0.2, "third_perspective_score": 0.2, "label": 0}
 {"index": 50, "first_perspective_score": 0.3, "third_perspective_score": 0.3, "label": 1}
 {"index": 51, "first_perspective_score": 0.4, "third_perspective_score": 0.2, "label": 1}
-{"index": 52, "first_perspective_score": 0.7, "third_perspective_score": 0.4, "label": 1}
+{"index": 52, "first_perspective_score": 0.3, "third_perspective_score": 0.3, "label": 1}
 {"index": 53, "first_perspective_score": 0.7, "third_perspective_score": 0.3, "label": 1}
 {"index": 54, "first_perspective_score": 0.4, "third_perspective_score": 0.6, "label": 1}
 {"index": 55, "first_perspective_score": 0.4, "third_perspective_score": 0.3, "label": 1}
