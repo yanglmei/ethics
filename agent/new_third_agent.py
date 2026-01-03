@@ -35,17 +35,21 @@ class MoralAgent(BaseAgent):
             prompt = dedent(f"""
             
             {text}
-            0 indicates the his or her behavior was correct.
-            1 indicates the his or her behavior was clearly wrong.
+            That' all.
+            Now,
+            
+            0 indicates Nick's behavior was correct.
+            1 indicates Nick's behavior was clearly wrong.
             Values between 0 and 1 represent different degrees of wrongdoing.
-            Please use a middle value as appropriate, replying with a number between 0 and 1 to evaluate he or she; no explanation is required.
+            Please use a middle value as appropriate, replying with only a single number between 0 and 1 to evaluate Nick; 
+            no explanation is required.
             """).strip()
 
             try:
                 response = client.chat.completions.create(
                     model=self.model_name,
                     messages=[
-                        {"role": "system", "content": "You are a careful linguistic editor."},
+                        {"role": "system", "content": "You are a moral judge."},
                         {"role": "user", "content": prompt}
                     ],
                     temperature=0,
@@ -61,7 +65,7 @@ class MoralAgent(BaseAgent):
                 })
 
             except Exception as e:
-                print("⚠️ 请求失败，保留原文本")
+                print(f"❌ 请求失败，具体原因: {e}") 
                 results.append({
                     "index": idx,
                     "score": text,
